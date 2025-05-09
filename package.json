@@ -1,5 +1,5 @@
 {
-  "name": "use-detect-keyboard-open",
+  "name": "@thanhnn/use-detect-keyboard-open",
   "version": "0.1.0",
   "description": "A hook to detect when the virtual keyboard is open on mobile devices",
   "author": "nnthanh01061999",
