@@ -1,8 +1,5 @@
 import type { Preview } from '@storybook/react';
 
-// Import any global styles here
-import '../src/styles/index.css';
-
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
@@ -22,4 +19,4 @@ const preview: Preview = {
   },
 };
 
-export default preview; 
+export default preview;

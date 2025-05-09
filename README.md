@@ -1,36 +1,66 @@
-# React Library Template
+# use-detect-keyboard-open
 
-A modern React component library template for creating reusable UI components with TypeScript support.
+A React hook that detects when the virtual keyboard is open on mobile devices.
 
 ## Features
 
-- 📦 Optimized build with Rollup
-- 🔄 Modern React with TypeScript
-- 📚 Storybook integration for component development and documentation
-- 🧪 Ready for testing
-- 📝 TypeScript declarations
-- 📦 ESM and CommonJS support
-- 🎨 CSS/SCSS support
+- 📱 Reliably detects keyboard open/close states on mobile devices
+- 🔄 Works with both iOS and Android devices
+- ⚛️ Simple React hook implementation
+- 📏 Multiple detection methods for better accuracy
+- 💪 TypeScript support
+- 📚 Storybook documentation for components
 
 ## Installation
 
 ```bash
-npm install your-library-name
+npm install use-detect-keyboard-open
 # or
-yarn add your-library-name
+yarn add use-detect-keyboard-open
 # or
-pnpm add your-library-name
+pnpm add use-detect-keyboard-open
 ```
 
 ## Usage
 
 ```jsx
-import { Component } from 'your-library-name';
+import { useDetectKeyboardOpen } from 'use-detect-keyboard-open';
 
 function App() {
-  return <Component />;
+  const isKeyboardOpen = useDetectKeyboardOpen();
+
+  return (
+    <div>
+      <p>Keyboard is {isKeyboardOpen ? 'open' : 'closed'}</p>
+      <input type="text" placeholder="Type something..." />
+    </div>
+  );
 }
 ```
+
+## How It Works
+
+The hook uses multiple detection methods to reliably detect when the virtual keyboard is open:
+
+1. **Window Size Method**: Detects significant changes in window height which typically occur when the keyboard opens
+2. **Focus Events Method**: Tracks input and textarea focus/blur events to determine keyboard state
+
+## API
+
+### useDetectKeyboardOpen
+
+```tsx
+const isKeyboardOpen = useDetectKeyboardOpen();
+```
+
+Returns a boolean value indicating whether the virtual keyboard is currently open.
+
+## Common Use Cases
+
+- Adjusting UI layout when keyboard appears
+- Hiding elements when keyboard is visible
+- Implementing custom scroll behavior for inputs
+- Creating responsive forms optimized for mobile
 
 ## Development
 
@@ -38,8 +68,8 @@ function App() {
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/your-library-name.git
-cd your-library-name
+git clone https://github.com/nnthanh01061999/use-detect-keyboard-open.git
+cd use-detect-keyboard-open
 
 # Install dependencies
 npm install
@@ -69,6 +99,16 @@ yarn build
 pnpm build
 ```
 
+## Browser Support
+
+- iOS Safari (9+)
+- Android Chrome (50+)
+- Other modern mobile browsers
+
 ## License
 
 MIT
+
+## Acknowledgements
+
+- Created by [nnthanh01061999](https://github.com/nnthanh01061999)

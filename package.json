@@ -1,16 +1,16 @@
 {
-  "name": "your-library-name",
+  "name": "use-detect-keyboard-open",
   "version": "0.1.0",
-  "description": "A modern React component library with TypeScript support",
-  "author": "your-name",
+  "description": "A hook to detect when the virtual keyboard is open on mobile devices",
+  "author": "nnthanh01061999",
   "license": "MIT",
-  "homepage": "https://github.com/username/your-library-name#readme",
+  "homepage": "https://github.com/nnthanh01061999/use-detect-keyboard-open#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/username/your-library-name.git"
+    "url": "git+https://github.com/nnthanh01061999/use-detect-keyboard-open.git"
   },
   "bugs": {
-    "url": "https://github.com/username/your-library-name/issues"
+    "url": "https://github.com/nnthanh01061999/use-detect-keyboard-open/issues"
   },
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.mjs",
