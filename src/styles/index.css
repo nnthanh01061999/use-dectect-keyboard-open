@@ -1,0 +1,10 @@
+/* Base styles for the library */
+
+/* Reset basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Add library-specific global styles here */ 

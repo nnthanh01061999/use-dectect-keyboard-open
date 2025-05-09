@@ -1,0 +1,52 @@
+# Source
+src
+
+# Tests
+__tests__
+coverage
+*.test.js
+*.test.ts
+*.test.tsx
+
+# Config files
+.github
+.vscode
+.editorconfig
+.prettierrc
+.eslintrc
+.babelrc
+.gitignore
+tsconfig.json
+rollup.config.js
+rollup.config.mjs
+jest.config.js
+.travis.yml
+
+# Storybook
+stories
+.storybook
+storybook-static
+
+# Docs
+docs
+documentation
+demo
+examples
+
+# Misc
+.DS_Store
+*.log
+.idea
+.github
+.circleci
+CHANGELOG.md
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# NPM/Yarn/PNPM
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npmrc
+.yarnrc 
